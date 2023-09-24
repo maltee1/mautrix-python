@@ -69,6 +69,8 @@ from .message import (
 from .reaction import ReactionEvent, ReactionEventContent
 from .redaction import RedactionEvent, RedactionEventContent
 from .state import (
+    CallMemberEventContent,
+    CallMembership,
     CanonicalAliasStateEventContent,
     JoinRule,
     JoinRulesStateEventContent,

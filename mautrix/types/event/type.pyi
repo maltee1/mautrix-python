@@ -49,6 +49,7 @@ class EventType(Serializable):
     CALL_HANGUP: "EventType"
     CALL_REJECT: "EventType"
     CALL_NEGOTIATE: "EventType"
+    CALL_MEMBER_EVENT: "EventType"
 
     BEEPER_MESSAGE_STATUS: "EventType"
 

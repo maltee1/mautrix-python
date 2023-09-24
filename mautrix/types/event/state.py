@@ -208,6 +208,15 @@ class SpaceParentStateEventContent(SerializableAttrs):
     canonical: bool = False
 
 
+class CallMembership(SerializableAttrs):
+    application: str = None
+
+
+@dataclass
+class CallMemberEventContent(SerializableAttrs):
+    memberships: List[CallMembership] = None
+
+
 StateEventContent = Union[
     PowerLevelStateEventContent,
     MemberStateEventContent,
@@ -222,6 +231,7 @@ StateEventContent = Union[
     SpaceChildStateEventContent,
     SpaceParentStateEventContent,
     JoinRulesStateEventContent,
+    CallMemberEventContent,
     Obj,
 ]
 
@@ -285,6 +295,7 @@ state_event_content_map = {
     EventType.ROOM_ENCRYPTION: RoomEncryptionStateEventContent,
     EventType.SPACE_CHILD: SpaceChildStateEventContent,
     EventType.SPACE_PARENT: SpaceParentStateEventContent,
+    EventType.CALL_MEMBER_EVENT: CallMemberEventContent,
 }
 
 

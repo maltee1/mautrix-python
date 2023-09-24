@@ -181,6 +181,7 @@ _standard_types = {
         "m.room.encryption": "ROOM_ENCRYPTION",
         "m.space.child": "SPACE_CHILD",
         "m.space.parent": "SPACE_PARENT",
+        "org.matrix.msc3401.call.member": "CALL_MEMBER_EVENT",
     },
     EventType.Class.MESSAGE: {
         "m.room.redaction": "ROOM_REDACTION",
